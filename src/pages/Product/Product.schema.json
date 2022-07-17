@@ -1,0 +1,203 @@
+{
+  "name": "product",
+  "allowAdd": true,
+  "allowEdit": true,
+  "allowDelete": true,
+  "allowView": true,
+  "attributes": [
+    {
+      "attrName": "_id",
+      "type": "String"
+    },
+    {
+      "attrName": "name",
+      "type": "String"
+    },
+    {
+      "attrName": "description",
+      "type": "String"
+    },
+    {
+      "attrName": "downloadUrl",
+      "type": "String"
+    },
+    {
+      "attrName": "checksum",
+      "type": "String"
+    },
+    {
+      "attrName": "isDeleted",
+      "type": "Boolean"
+    },
+    {
+      "attrName": "isActive",
+      "type": "Boolean"
+    },
+    {
+      "attrName": "createdAt",
+      "type": "Date"
+    },
+    {
+      "attrName": "updatedAt",
+      "type": "Date"
+    },
+    {
+      "attrName": "addedBy",
+      "type": "ObjectId",
+      "ref": "user"
+    },
+    {
+      "attrName": "updatedBy",
+      "type": "ObjectId",
+      "ref": "user"
+    }
+  ],
+  "screenLayout": {
+    "singlePageForm": "singleLine",
+    "listing": {
+      "name": "Table layout",
+      "description": "Select properties you want to manage for tables on react theme page listing.",
+      "config": {
+        "paginate": true,
+        "limitSetup": 10,
+        "dataCount": true,
+        "search": true,
+        "sorting": true,
+        "optionToEnable": true,
+        "rowSelection": true
+      }
+    },
+    "loader": "lazyLoading"
+  },
+  "actions": [
+    {
+      "category": "addEdit",
+      "attributes": [
+        {
+          "attrName": "name",
+          "label": "Name",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 0
+        },
+        {
+          "attrName": "description",
+          "label": "Description",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 1
+        },
+        {
+          "attrName": "downloadUrl",
+          "label": "Download Url",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 2
+        },
+        {
+          "attrName": "checksum",
+          "label": "Checksum",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 3
+        }
+      ]
+    },
+    {
+      "category": "listing",
+      "attributes": [
+        {
+          "type": "String",
+          "attrName": "name",
+          "label": "Name",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "description",
+          "label": "Description",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "downloadUrl",
+          "label": "Download Url",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "checksum",
+          "label": "Checksum",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        }
+      ]
+    },
+    {
+      "category": "detailView",
+      "attributes": [
+        {
+          "type": "String",
+          "attrName": "name",
+          "label": "Name",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "description",
+          "label": "Description",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "downloadUrl",
+          "label": "Download Url",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "checksum",
+          "label": "Checksum",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        }
+      ]
+    }
+  ],
+  "allowSoftDelete": true,
+  "allowHardDelete": true
+}

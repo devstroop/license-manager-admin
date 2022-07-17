@@ -1,0 +1,168 @@
+{
+  "name": "authority",
+  "allowAdd": true,
+  "allowEdit": true,
+  "allowDelete": true,
+  "allowView": true,
+  "attributes": [
+    {
+      "attrName": "_id",
+      "type": "String"
+    },
+    {
+      "attrName": "userId",
+      "type": "String"
+    },
+    {
+      "attrName": "productId",
+      "type": "String"
+    },
+    {
+      "attrName": "credits",
+      "type": "Number"
+    },
+    {
+      "attrName": "isDeleted",
+      "type": "Boolean"
+    },
+    {
+      "attrName": "isActive",
+      "type": "Boolean"
+    },
+    {
+      "attrName": "createdAt",
+      "type": "Date"
+    },
+    {
+      "attrName": "updatedAt",
+      "type": "Date"
+    },
+    {
+      "attrName": "addedBy",
+      "type": "ObjectId",
+      "ref": "user"
+    },
+    {
+      "attrName": "updatedBy",
+      "type": "ObjectId",
+      "ref": "user"
+    }
+  ],
+  "screenLayout": {
+    "singlePageForm": "singleLine",
+    "listing": {
+      "name": "Table layout",
+      "description": "Select properties you want to manage for tables on react theme page listing.",
+      "config": {
+        "paginate": true,
+        "limitSetup": 10,
+        "dataCount": true,
+        "search": true,
+        "sorting": true,
+        "optionToEnable": true,
+        "rowSelection": true
+      }
+    },
+    "loader": "lazyLoading"
+  },
+  "actions": [
+    {
+      "category": "addEdit",
+      "attributes": [
+        {
+          "type": "String",
+          "attrName": "userId",
+          "label": "User Id",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "productId",
+          "label": "Product Id",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "Number",
+          "attrName": "credits",
+          "label": "Credits",
+          "inputType": "NumberWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        }
+      ]
+    },
+    {
+      "category": "listing",
+      "attributes": [
+        {
+          "type": "String",
+          "attrName": "userId",
+          "label": "User Id",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "productId",
+          "label": "Product Id",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "Number",
+          "attrName": "credits",
+          "label": "Credits",
+          "inputType": "NumberWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        }
+      ]
+    },
+    {
+      "category": "detailView",
+      "attributes": [
+        {
+          "type": "String",
+          "attrName": "userId",
+          "label": "User Id",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "productId",
+          "label": "Product Id",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "Number",
+          "attrName": "credits",
+          "label": "Credits",
+          "inputType": "NumberWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        }
+      ]
+    }
+  ],
+  "allowSoftDelete": true,
+  "allowHardDelete": true
+}

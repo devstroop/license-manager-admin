@@ -1,0 +1,91 @@
+{
+  "dashboard": {
+    "1": [
+      {
+        "id": "421c9006-925c-42e6-bfc2-9cfdcbaf506a",
+        "name": "Count",
+        "width": 3,
+        "model": "license",
+        "limit": 10,
+        "formatedModelName": "License"
+      },
+      {
+        "id": "a6befed7-73c4-420a-ba80-0042a24eae9e",
+        "name": "Count",
+        "width": 3,
+        "model": "product",
+        "limit": 10,
+        "formatedModelName": "Product"
+      },
+      {
+        "id": "44fb7565-333c-4b21-a6ba-5239360f93f6",
+        "name": "Count",
+        "width": 3,
+        "model": "user",
+        "limit": 10,
+        "formatedModelName": "User"
+      },
+      {
+        "id": "bf2fdd7b-66c3-46a6-91ef-b8496fbb366d",
+        "name": "Count",
+        "width": 3,
+        "model": "authority",
+        "limit": 10,
+        "formatedModelName": "Authority"
+      }
+    ],
+    "2": [
+      {
+        "id": "6c5ef956-84d1-4288-9158-675642f117ea",
+        "name": "Table",
+        "width": 6,
+        "model": "license",
+        "attributes": [
+          {
+            "uid": "1bfff0ab-53f2-4653-b3ca-b5bc41abc8c9",
+            "attrName": "serialKey",
+            "type": "String",
+            "label": "serialKey",
+            "sequence": 0
+          },
+          {
+            "uid": "21f86e98-80bb-4f51-b831-264169f0c0f8",
+            "attrName": "productId",
+            "type": "String",
+            "label": "productId",
+            "sequence": 1
+          },
+          {
+            "uid": "1b103605-c9a8-49d3-9d58-6885dcf504eb",
+            "attrName": "validFrom",
+            "type": "String",
+            "label": "validFrom",
+            "sequence": 2
+          },
+          {
+            "uid": "2b51c09e-c5a9-4a2e-8a7c-3e9221e988b9",
+            "attrName": "validTill",
+            "type": "String",
+            "label": "validTill",
+            "sequence": 3
+          },
+          {
+            "uid": "05762017-15cf-49e7-806c-5bc9140c18f8",
+            "attrName": "isActive",
+            "type": "Boolean",
+            "label": "isActive",
+            "sequence": 4
+          }
+        ],
+        "options": {
+          "sort": {
+            "createdAt": -1
+          }
+        },
+        "limit": 10,
+        "formatedModelName": "License"
+      }
+    ],
+    "3": []
+  }
+}

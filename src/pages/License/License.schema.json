@@ -1,0 +1,211 @@
+{
+  "name": "license",
+  "allowAdd": true,
+  "allowEdit": true,
+  "allowDelete": true,
+  "allowView": true,
+  "attributes": [
+    {
+      "attrName": "_id",
+      "type": "String"
+    },
+    {
+      "attrName": "serialKey",
+      "type": "String"
+    },
+    {
+      "attrName": "productId",
+      "type": "String"
+    },
+    {
+      "attrName": "validFrom",
+      "type": "String"
+    },
+    {
+      "attrName": "validTill",
+      "type": "String"
+    },
+    {
+      "attrName": "isDeleted",
+      "type": "Boolean"
+    },
+    {
+      "attrName": "isActive",
+      "type": "Boolean"
+    },
+    {
+      "attrName": "createdAt",
+      "type": "Date"
+    },
+    {
+      "attrName": "updatedAt",
+      "type": "Date"
+    },
+    {
+      "attrName": "addedBy",
+      "type": "ObjectId",
+      "ref": "user"
+    },
+    {
+      "attrName": "updatedBy",
+      "type": "ObjectId",
+      "ref": "user"
+    }
+  ],
+  "screenLayout": {
+    "singlePageForm": "singleLine",
+    "listing": {
+      "name": "Table layout",
+      "description": "Select properties you want to manage for tables on react theme page listing.",
+      "config": {
+        "paginate": true,
+        "limitSetup": 10,
+        "dataCount": true,
+        "search": true,
+        "sorting": true,
+        "optionToEnable": true,
+        "rowSelection": true
+      }
+    },
+    "loader": "lazyLoading"
+  },
+  "actions": [
+    {
+      "category": "addEdit",
+      "attributes": [
+        {
+          "attrName": "serialKey",
+          "label": "Serial Key",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 0
+        },
+        {
+          "attrName": "productId",
+          "label": "Product Id",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 1
+        },
+        {
+          "attrName": "validFrom",
+          "label": "Valid From",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 2
+        },
+        {
+          "attrName": "validTill",
+          "label": "Valid Till",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 3
+        }
+      ]
+    },
+    {
+      "category": "listing",
+      "attributes": [
+        {
+          "attrName": "serialKey",
+          "label": "Serial Key",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 0
+        },
+        {
+          "attrName": "productId",
+          "label": "Product Id",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 1
+        },
+        {
+          "attrName": "validFrom",
+          "label": "Valid From",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 2
+        },
+        {
+          "attrName": "validTill",
+          "label": "Valid Till",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 3
+        }
+      ]
+    },
+    {
+      "category": "detailView",
+      "attributes": [
+        {
+          "attrName": "serialKey",
+          "label": "Serial Key",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 0
+        },
+        {
+          "attrName": "productId",
+          "label": "Product Id",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 1
+        },
+        {
+          "attrName": "validFrom",
+          "label": "Valid From",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 2
+        },
+        {
+          "attrName": "validTill",
+          "label": "Valid Till",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 3
+        }
+      ]
+    }
+  ],
+  "allowSoftDelete": true,
+  "allowHardDelete": true
+}
